@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EcoParaíso Hotel – Restaurante ecológico en la naturaleza salvadoreña. Habitaciones, tarifas, reservas y más." />
+  <meta name="keywords" content="hotel restaurante, ecoturismo, El Salvador, turismo ecológico, cabañas, reservas" />
+  <title>EcoParaíso Hotel | Restaurante Ecológico en El Salvador</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+  <!--NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Menú principal">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Inicio EcoParaíso">
+        <div class="navbar__logo-icon" aria-hidden="true">🌿</div>
+        <div class="navbar__logo-text">
+          EcoParaíso
+          <span>Hotel -  Restaurante</span>
+        </div>
+      </a>
+
+      <ul class="navbar__links" role="list">
+        <li><a href="index.html" class="activo">Inicio</a></li>
+        <li><a href="habitaciones.html">Habitaciones</a></li>
+	<li><a href="reservas.html" class="navbar__cta">Reservar</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        
+      </ul>
+
+      <button class="navbar__hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!--  HERO -->
+  <section class="hero" id="inicio" aria-label="Bienvenida">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__pattern" aria-hidden="true"></div>
+
+    <!-- Decoraciones estilo Llort -->
+    <div class="hero__deco hero__deco--tl" aria-hidden="true">🦜</div>
+    <div class="hero__deco hero__deco--tr" aria-hidden="true">🌺</div>
+    <div class="hero__deco hero__deco--bl" aria-hidden="true">🌿</div>
+    <div class="hero__deco hero__deco--br" aria-hidden="true">🦋</div>
+
+    <div class="hero__content">
+      <div class="hero__badge">🌿 Turismo Ecológico Certificado</div>
+      <h1 class="hero__titulo">
+        Donde la <em>naturaleza</em><br>es tu hogar
+      </h1>
+      <p class="hero__subtitulo">EcoParaíso Hotel Restaurante · Chalatenango, El Salvador</p>
+      <p class="hero__descripcion">
+        Sumérgete en la belleza intacta del bosque salvadoreño. Cabañas, suites y habitaciones
+        diseñadas para quienes buscan paz, confort y conexión con la tierra.
+      </p>
+      <div class="hero__botones">
+        <a href="reservas.html" class="btn btn-primario">🌿 Reservar Ahora</a>
+        <a href="habitaciones.html" class="btn btn-secundario">Ver Habitaciones ›</a>
+      </div>
+    </div>
+
+    <div class="hero__stats">
+      <div class="hero__stat">
+        <strong data-contador="12" data-sufijo="+">12+</strong>
+        <span>Años de Experiencia</span>
+      </div>
+      <div class="hero__stat">
+        <strong data-contador="500" data-sufijo="+">500+</strong>
+        <span>Huéspedes Felices</span>
+      </div>
+      <div class="hero__stat">
+        <strong data-contador="18">18</strong>
+        <span>Habitaciones Únicas</span>
+      </div>
+      <div class="hero__stat">
+        <strong data-contador="4" data-sufijo="★">4.9★</strong>
+        <span>Calificación</span>
+      </div>
+    </div>
+
+    <div class="hero__wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#ffffff"/>
+      </svg>
+    </div>
+  </section>
+
+  <!--  BANNER LLORT -->
+  <div class="llort-banner" aria-hidden="true">
+    <div class="llort-banner__patron">
+      <div class="llort-banner__elemento"><span>🌺</span><span>Flores</span></div>
+      <div class="llort-banner__elemento"><span>🦜</span><span>Guacamayas</span></div>
+      <div class="llort-banner__elemento"><span>🌊</span><span>Ríos</span></div>
+      <div class="llort-banner__elemento"><span>🦋</span><span>Mariposas</span></div>
+      <div class="llort-banner__elemento"><span>🌿</span><span>Naturaleza</span></div>
+      <div class="llort-banner__elemento"><span>🎨</span><span>Arte</span></div>
+      <div class="llort-banner__elemento"><span>🏔️</span><span>Montañas</span></div>
+      <div class="llort-banner__elemento"><span>⭐</span><span>Estrellas</span></div>
+      <div class="llort-banner__elemento"><span>🌻</span><span>Girasoles</span></div>
+      <div class="llort-banner__elemento"><span>🦅</span><span>Aves</span></div>
+    </div>
+  </div>
+
+  <!--   NOSOTROS  -->
+  <section class="seccion" id="nosotros" aria-labelledby="tit-nosotros">
+    <div class="container">
+      <div class="nosotros__grid">
+
+        <div class="nosotros__imagen-wrap fade-in">
+          <img
+            src="https://lh5.googleusercontent.com/-LFQ_ehODo3Y/UN0PXOx7NUI/AAAAAAAAHVc/1fbAEegNzJs/s500/hotelelpitalhigland.jpg"
+            alt="Vista del hotel EcoParaíso rodeado de naturaleza"
+            class="nosotros__imagen-principal"
+          />
+          <img
+            src="https://lh5.googleusercontent.com/-7Hn3S_KJas4/VQyRPCdoU8I/AAAAAAAAH-0/J8QW3Jgtzpg/s500/el-pital-lecho-de-flores.JPG"
+            alt="Detalle artesanal de la recepción del hotel"
+            class="nosotros__imagen-deco"
+          />
+          <div class="nosotros__badge">
+            <strong>12+</strong>
+            <span>Años de tradición</span>
+          </div>
+        </div>
+
+        <div class="nosotros__texto fade-in">
+          <div class="seccion__encabezado" style="text-align:left; margin-bottom:28px;">
+            <div class="seccion__etiqueta">Nuestra Historia</div>
+            <h2 class="seccion__titulo" id="tit-nosotros">Un rincón de El Salvador que te cambia</h2>
+          </div>
+
+          <p>
+            Fundado en el corazón de Chalatenango en 2013, EcoParaíso nació del sueño de la familia
+            Chalateca: ofrecer una experiencia de hospedaje que honrara la riqueza natural y cultural
+            salvadoreña. Lo que comenzó como tres cabañas rodeadas de cafetales se ha convertido en el
+            hotel restaurante ecológico de referencia en el país.
+          </p>
+          <p>
+            Cada detalle del hotel fue pensado con amor: los murales de nuestras paredes están inspirados
+            en el colorido arte de Fernando Llort, las hamacas se tejen en talleres locales y cada mañana
+            nuestro chef prepara el desayuno con productos cosechados en nuestra propia finca orgánica.
+          </p>
+          
+          <div class="nosotros__valores">
+            <div class="valor-card">
+              <div class="servicio-card__imagen">
+		<img src="img/sostenible.png" alt="Sostenible" loading="lazy"></div>
+              <h4>Sostenibilidad</h4>
+              <p>Energía solar, agua reciclada y residuo cero en toda la operación.</p>
+            </div>
+            <div class="valor-card">
+		<div class="servicio-card__imagen">
+		<img src="img/productores.jpg" alt="productores locales" loading="lazy"></div>
+               <h4>Comunidad</h4>
+              <p>Apoyamos a 12 familias artesanas y productores agrícolas locales.</p>
+            </div>
+            <div class="valor-card">
+             <div class="servicio-card__imagen">
+		<img src="img/arte.png" alt="Artesanias" loading="lazy"></div>
+              <h4>Arte y Cultura</h4>
+              <p>Murales, talleres de artesanía y música típica cada fin de semana.</p>
+            </div>
+            <div class="valor-card">
+              <div class="servicio-card__imagen">
+		<img src="img/excelencia.png" alt="excelencia" loading="lazy"></div>
+
+              <h4>Excelencia</h4>
+              <p>Servicio personalizado las 24 horas con atención de primer nivel.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--  SERVICIOS  -->
+  <section class="seccion seccion--beige" id="servicios" aria-labelledby="tit-servicios">
+    <div class="container">
+      <div class="seccion__encabezado fade-in">
+        <div class="seccion__etiqueta">Lo que Ofrecemos</div>
+        <h2 class="seccion__titulo" id="tit-servicios">Servicios e instalaciones</h2>
+        <p class="seccion__descripcion">
+          Cada servicio fue diseñado para que tu estadía sea perfecta,
+          desde el primer café hasta la última estrella que veas al dormir.
+        </p>
+      </div>
+
+      <div class="servicios__grid">
+        <article class="servicio-card fade-in" aria-label="Servicio: WiFi">
+          <div class="servicio-card__imagen">
+		<img src="img/wifi.jpg" alt="Servicio de WiFi de alta velocidad" loading="lazy"></div>
+          <h3>WiFi de Alta Velocidad</h3>
+          <p>Conexión fibra óptica en todas las habitaciones y áreas comunes. Señal estable incluso en las cabañas más remotas del bosque.</p>
+        </article>
+        <article class="servicio-card fade-in" aria-label="Servicio: Piscina">
+          <div class="servicio-card__imagen">
+		<img src="img/piscina.jpg" alt="Servicio de piscina" loading="lazy"></div>
+
+          <h3>Piscina Natural</h3>
+          <p>Piscina infinita con vista panorámica al bosque, tratada con ionización de cobre. Abierta todos los días de 7:00 a 20:00.</p>
+        </article>
+        <article class="servicio-card fade-in" aria-label="Servicio: Restaurante">
+          	<div class="servicio-card__imagen">
+		<img src="img/restaurante.png" alt="Servicio de restaurante" loading="lazy"></div>
+          <h3>Restaurante La Ceiba</h3>
+          <p>Cocina salvadoreña de autor con ingredientes 100 % orgánicos de nuestra finca. Desayuno, almuerzo y cena. Menú vegetariano disponible.</p>
+        </article>
+        <article class="servicio-card fade-in" aria-label="Servicio: Tours">
+          <div class="servicio-card__imagen">
+		<img src="img/tour.png" alt="Servicio de tour" loading="lazy"></div>
+          <h3>Tours y Aventura</h3>
+          <p>Caminatas guiadas por el bosque nuboso, visitas a cascadas, avistamiento de aves y tours de café en la hacienda vecina.</p>
+        </article>
+        <article class="servicio-card fade-in" aria-label="Servicio: Spa">
+          <div class="servicio-card__imagen">
+		<img src="img/spa.jpg" alt="Servicio de spa" loading="lazy"></div>
+          <h3>Spa Verde</h3>
+          <p>Masajes relajantes, tratamientos faciales con extractos de plantas locales y baños de vapor de eucalipto. Reserva con anticipación.</p>
+        </article>
+        <article class="servicio-card fade-in" aria-label="Servicio: Estacionamiento">
+          <div class="servicio-card__imagen">
+		<img src="img/estacionamiento.jpg" alt="Servicio de spa" loading="lazy"></div>
+          <h3>Estacionamiento Seguro</h3>
+          <p>Parqueo techado con capacidad para 25 vehículos, vigilancia las 24 horas y circuito cerrado de cámaras. Sin costo adicional.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABITACIONES EN PROMOCION  -->
+  <section class="seccion" id="habitaciones" aria-labelledby="tit-habs">
+    <div class="container">
+      <div class="seccion__encabezado fade-in">
+        <div class="seccion__etiqueta">Dónde Dormir</div>
+        <h2 class="seccion__titulo" id="tit-habs"> Promociones del MES!</h2>
+        <p class="seccion__descripcion">Tres experiencias únicas de hospedaje, todas con vistas al bosque.</p>
+      </div>
+
+      <div class="habitaciones__grid">
+
+        <article class="habitacion-card fade-in" data-tipo="estandar">
+          <div class="habitacion-card__imagen">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH36D7KLBWaNsRb0CK8Jc2oIizZ11Rhsuvig&s" alt="Habitación Estándar del hotel EcoParaíso" loading="lazy" />
+            <span class="habitacion-card__badge">Más Popular</span>
+            <div class="habitacion-card__precio">
+              <strong>$75</strong>
+              <span>por noche</span>
+            </div>
+          </div>
+          <div class="habitacion-card__cuerpo">
+            <h3>Habitación Estándar</h3>
+            <p>Acogedora habitación con decoración artesanal salvadoreña, ventana panorámica al jardín y cama king size con ropa de cama de algodón orgánico.</p>
+            <div class="habitacion-card__meta">
+              <span>👥 1–2 personas</span>
+              <span>📐 28 m²</span>
+              <span>🛏 Cama king</span>
+            </div>
+            <div class="habitacion-card__amenities">
+              <span class="amenity">WiFi</span>
+              <span class="amenity">A/C</span>
+              <span class="amenity">TV HD</span>
+              <span class="amenity">Baño privado</span>
+              <span class="amenity">Desayuno</span>
+            </div>
+            <a href="reservas.html?tipo=estandar" class="btn btn-primario" style="width:100%; justify-content:center;">Reservar esta habitación</a>
+          </div>
+        </article>
+
+        <article class="habitacion-card fade-in" data-tipo="suite">
+          <div class="habitacion-card__imagen">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=700&q=80" alt="Suite Familiar EcoParaíso con decoración artesanal" loading="lazy" />
+            <span class="habitacion-card__badge" style="background: linear-gradient(135deg,#D4A843,#E8843A);">Suite Familiar</span>
+            <div class="habitacion-card__precio">
+              <strong>$140</strong>
+              <span>por noche</span>
+            </div>
+          </div>
+          <div class="habitacion-card__cuerpo">
+            <h3>Suite Familiar</h3>
+            <p>Espaciosa suite de dos ambientes con sala de estar, cocina básica y dos habitaciones. Ideal para familias o grupos que buscan privacidad y espacio.</p>
+            <div class="habitacion-card__meta">
+              <span>👥 2–5 personas</span>
+              <span>📐 65 m²</span>
+              <span>🛏 2 camas</span>
+            </div>
+            <div class="habitacion-card__amenities">
+              <span class="amenity">WiFi</span>
+              <span class="amenity">A/C</span>
+              <span class="amenity">Cocina</span>
+              <span class="amenity">Sala</span>
+              <span class="amenity">Desayuno</span>
+              <span class="amenity">Bañera</span>
+            </div>
+            <a href="reservas.html?tipo=suite" class="btn btn-primario" style="width:100%; justify-content:center;">Reservar esta habitación</a>
+          </div>
+        </article>
+
+        <article class="habitacion-card fade-in" data-tipo="cabana">
+          <div class="habitacion-card__imagen">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEP4gP2o0U4G7jN0Hsuote249f_SjmWHA4yw&s" alt="Cabaña Ecológica en el bosque EcoParaíso" loading="lazy" />
+            <span class="habitacion-card__badge" style="background: linear-gradient(135deg,#4A8C5C,#2ABFBF);">Cabaña Ecológica</span>
+            <div class="habitacion-card__precio">
+              <strong>$195</strong>
+              <span>por noche</span>
+            </div>
+          </div>
+          <div class="habitacion-card__cuerpo">
+            <h3>Cabaña Ecológica</h3>
+            <p>Cabaña independiente construida con madera certificada, techo de palma y terraza privada con hamaca y vista directa al bosque. Experiencia única.</p>
+            <div class="habitacion-card__meta">
+              <span>👥 2–4 personas</span>
+              <span>📐 80 m²</span>
+              <span>🛖 Cabaña privada</span>
+            </div>
+            <div class="habitacion-card__amenities">
+              <span class="amenity">WiFi</span>
+              <span class="amenity">Terraza</span>
+              <span class="amenity">Hamaca</span>
+              <span class="amenity">Jacuzzi</span>
+              <span class="amenity">Desayuno</span>
+              <span class="amenity">Chimenea</span>
+            </div>
+            <a href="reservas.html?tipo=cabana" class="btn btn-primario" style="width:100%; justify-content:center;">Reservar esta habitación</a>
+          </div>
+        </article>
+
+      </div>
+
+      <div style="text-align:center; margin-top:48px;">
+        <a href="habitaciones.html" class="btn btn-outline">Ver todas las habitaciones →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROMO BANNER ════════════════════════════════ -->
+  <div class="promo">
+    <div class="container">
+      <div class="promo__inner">
+        <div class="promo__texto">
+          <h2>🌺 Oferta Temporada Alta 2026 🦋</h2>
+          <p>Reserva 3 noches y obtén la cuarta noche completamente gratis. Incluye desayuno buffet, un masaje de bienvenida y tour guiado por la finca. ¡Oferta válida hasta el 30 de junio!</p>
+          <a href="reservas.html" class="btn btn-dorado" style="margin-top:20px;">Aprovechar Oferta →</a>
+        </div>
+        <div class="promo__precio">
+          <div class="desde">Desde</div>
+          <div class="monto">$75</div>
+          <div class="noche">por noche</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  TESTIMONIOS  -->
+  <section class="seccion seccion--oscuro" id="opiniones" aria-labelledby="tit-test">
+    <div class="container">
+      <div class="seccion__encabezado fade-in">
+        <div class="seccion__etiqueta">Voces de Nuestros Huéspedes</div>
+        <h2 class="seccion__titulo" id="tit-test">Lo que dicen quienes nos visitan</h2>
+      </div>
+
+      <div class="testimonios__grid">
+
+        <div class="testimonio-card fade-in">
+          <div class="testimonio-card__estrellas">★★★★★</div>
+          <p class="testimonio-card__texto">
+            "Llegué buscando descanso y me fui transformada. Las cabañas son preciosas, la comida deliciosa
+            y el equipo de trabajo, increíble."
+          </p>
+          <div class="testimonio-card__autor">
+            <img src="https://i.pravatar.cc/150?img=47" alt="Foto de María Rodríguez" class="testimonio-card__avatar" loading="lazy" />
+            <div class="testimonio-card__info">
+              <strong>María Rodríguez</strong>
+              <span>San Salvador, El Salvador</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonio-card fade-in">
+          <div class="testimonio-card__estrellas">★★★★★</div>
+          <p class="testimonio-card__texto">
+            "Llevé a mi familia durante las vacaciones de agosto y fue perfecta. Los niños adoraron
+            la piscina y el sendero de mariposas. El desayuno con productos de la finca es algo que
+            no olvidaremos pronto. Volveremos pronto."
+          </p>
+          <div class="testimonio-card__autor">
+            <img src="https://i.pravatar.cc/150?img=33" alt="Foto de Carlos Méndez" class="testimonio-card__avatar" loading="lazy" />
+            <div class="testimonio-card__info">
+              <strong>Carlos Méndez</strong>
+              <span>Antiguo Cuscatlán, El Salvador</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonio-card fade-in">
+          <div class="testimonio-card__estrellas">★★★★★</div>
+          <p class="testimonio-card__texto">
+            "Como viajero extranjero en El Salvador, fue una revelación. El equipo habla inglés, el hotel
+            está impecable y la experiencia cultural con los artesanos locales fue invaluable."
+          </p>
+          <div class="testimonio-card__autor">
+            <img src="https://i.pravatar.cc/150?img=12" alt="Foto de James Whitfield" class="testimonio-card__avatar" loading="lazy" />
+            <div class="testimonio-card__info">
+              <strong>James Whitfield</strong>
+              <span>Austin, Texas, EE.UU.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- FOOTER  -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__marca">
+          <div class="navbar__logo">
+            <div class="navbar__logo-icon">🌿</div>
+            <div class="navbar__logo-text">
+              EcoParaíso
+              <span> Hotel Restaurante</span>
+            </div>
+          </div>
+          <p>Un refugio de naturaleza y cultura en el corazón de Chalatenango, El Salvador. Turismo responsable que transforma vidas.</p>
+          <div class="footer__redes" style="margin-top:20px;">
+            <a href="#" aria-label="Facebook"><span aria-hidden="true">📘</span></a>
+            <a href="#" aria-label="Instagram"><span aria-hidden="true">📸</span></a>
+            <a href="#" aria-label="WhatsApp"><span aria-hidden="true">💬</span></a>
+            <a href="#" aria-label="YouTube"><span aria-hidden="true">▶️</span></a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="habitaciones.html">Habitaciones</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="reservas.html">Reservaciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+       <div class="footer__col">
+          <h4>Contacto</h4>
+          <div class="footer__contacto-item">
+            <span>📍</span>
+            <a href="https://maps.google.com" target="_blank" rel="noopener">Km 82 Carretera a Chalatenango, El Salvador</a>
+          </div>
+          
+          <div class="footer__contacto-item">
+            <span>🕐</span>
+            <span>Check-in: 2:00 PM · Check-out: 11:00 AM</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span class="anio-actual"></span> EcoParaíso Hotel Restaurante. Todos los derechos reservados.</span>
+        <span> Diseñado por <a href="#"> Equipo INSAM </a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!--   ELEMENTOS FLOTANTES  -->
+  <a href="https://wa.me/50378889999?text=Hola%2C%20quiero%20información%20sobre%20habitaciones" class="whatsapp-float" aria-label="Contactar por WhatsApp" target="_blank" rel="noopener">💬</a>
+  <button class="scroll-top" aria-label="Volver al inicio">↑</button>
+
+  <!-- Modal galería -->
+  <div class="modal-overlay" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+    <img class="modal-img" src="" alt="" />
+    <button class="modal-cerrar" aria-label="Cerrar imagen">✕</button>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

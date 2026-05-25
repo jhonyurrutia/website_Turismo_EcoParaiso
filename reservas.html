@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservaciones | EcoParaíso</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<section class="seccion">
+<div class="container">
+
+<div class="seccion__encabezado">
+<div class="seccion__etiqueta">Reserva tu experiencia</div>
+<h2 class="seccion__titulo">Formulario de Reservación</h2>
+</div>
+
+<form class="formulario-reserva" id="formReserva">
+
+<div class="campo-formulario">
+<label>Nombre completo</label>
+<input type="text" required>
+</div>
+
+<div class="campo-formulario">
+<label>Correo electrónico</label>
+<input type="email" required>
+</div>
+
+<div class="campo-formulario">
+<label>Tipo de habitación</label>
+<select required>
+<option>Habitación Estándar</option>
+<option>Suite Familiar</option>
+<option>Cabaña Ecológica</option>
+</select>
+</div>
+
+<div class="campo-formulario">
+<label>Fecha de entrada</label>
+<input type="date" required>
+</div>
+
+<div class="campo-formulario">
+<label>Fecha de salida</label>
+<input type="date" required>
+</div>
+
+<button type="submit" class="btn btn-primario">Confirmar Reservación</button>
+
+</form>
+
+<div id="mensajeReserva" class="mensaje-reserva"></div>
+
+</div>
+</section>
+
+<script src="js/app.js"></script>
+</body>
+</html>
